@@ -1,9 +1,11 @@
 *.pkl
 *.pyc
 __pycache__
-deprecated_nb/
-notes/
-supplementary_results/
-traces/
+/deprecated_nb/
+/notes/
+/supplementary_results/
+/traces/
 .DS_Store
 .ipynb_checkpoints
+*.png
+*.
