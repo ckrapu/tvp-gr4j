@@ -9,3 +9,9 @@ traces
 .ipynb_checkpoints
 *.png
 *.
+Icon
+deprecated-nb/*
+figures/*
+Icon
+
+Icon\r\r
