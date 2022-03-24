@@ -1,0 +1,9 @@
+matplotlib=3.4.2
+arviz=0.11.0
+pymc3=3.9.3
+numpy
+theano=1.0.4
+watermark
+pandas
+jax
+numpyro
