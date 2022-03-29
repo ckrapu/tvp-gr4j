@@ -3,6 +3,9 @@
 ## Overview
 This page serves as the official repository for the `tvp-gr4j` project aimed at developing dynamic (i.e. with time-varying parameters) rainfall-runoff models for change and trend detection via NumPyro and PyMC3.
 
+## Acknowledgements
+About 1/2 of the Jax implementation of GR4J in this project was copy/pasted from [Frederik Kratzert's Numpy implementation](https://github.com/kratzert/RRMPG). For Python programmers interested in simply hydrology models, I strongly recommend checking it out.
+
 ## Why should you care?
 The environment definitely isn't static - it's always changing. The best methods for change detection outside of hydrology make use of Bayesian models fit using MCMC. Until now, it was impossible to use standard MCMC techniques for problems with >100 parameters like Hamiltonian Monte Carlo with hydrology models  because they required backpropagating gradients through the hydrology model. Now we can do that! This connects the hydro change detection literature to the broader research community by giving us all the MCMC-based tools for analysis that we'd been lacking until now. 
 
