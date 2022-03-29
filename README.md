@@ -12,7 +12,7 @@ The environment definitely isn't static - it's always changing. The best methods
 You may ask yourself the following questions:
 
 - **But what about data assimilation methods?** *Yes, these can work, but when MCMC with a well-defined generative model is compared to data assilimation, the former is almost always easier and less brittle from a workflow perspective and I say this as someone who has implemented filtering methods many, many times. With PyMC, Stan, or Pyro, all you need to do is write the forward model - no matrix equations for variational data assimilation or extended Kalman filters*
-- **Why don't we use a neural network?** *Well, you could replace parts of the hydrology model with a NN. The beauty of Hamiltonian Monte Carlo is that it doesn't care what the forward model is, it just works! Also, the methods shown here work even when 99% of the data is thrown out. Fun fact - [HMC was partially reintroduced to statistics by researchers interested in Bayesian neural networks](https://arxiv.org/pdf/1206.1901.pdf).
+- **Why don't we use a neural network?** *Well, you could replace parts of the hydrology model with a NN. The beauty of Hamiltonian Monte Carlo is that it doesn't care what the forward model is, it just works! Also, the methods shown here work even when 99% of the data is thrown out. Fun fact - [HMC was partially reintroduced to statistics by researchers interested in Bayesian neural networks](https://arxiv.org/pdf/1206.1901.pdf).*
 - **Does it work on other hydrology models?** *It should, and I would love to try this with more models. Ping me at ckrapu@gmail.com if you want to collaborate on this.*
 
 
