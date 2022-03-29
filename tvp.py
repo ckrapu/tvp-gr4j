@@ -451,32 +451,6 @@ def sparse_matern_gp_prior(model, T, n_inducing=10, lower=100, upper=1500, varna
 
         tvp = pm.Deterministic(varname, tt.squeeze(tt.repeat(low_res, resolution)))
         return tvp
-    
-    
-'''def sparse_composite_gp_prior(model, T, n_inducing=10, rho_bounds=[5, 100], lower=100, upper=1500, varname='theta_1', sample_prior=False, approx='VFE'):
-    timesteps = np.arange(T)[:, None]
-    inducing  = np.linspace(0, T, n_inducing)[:, None]
-    
-    with model:
-        period = pm.Uniform('period', lower=10, upper=365)
-        rho = pm.Uniform('rho', lower=10, upper=365, shape=2)
-        gp_scale = pm.HalfNormal('gp_scale', sd=np.asarray([100,100]), shape=2)
-        intercept = pm.Uniform('intercept', lower=lower, upper=upper)
-        
-        mean_func = pm.gp.mean.Constant(intercept)
-
-        cov_func  = pm.gp.cov.Matern52(2, ls=rho[0], active_dims=[0])*gp_scale[0]**2 + \
-                    pm.gp.cov.Cosine(2, period, active_dims=[0]) * gp_scale[1]**2 
-        
-        if sample_prior:
-            gp = pm.gp.Latent(mean_func, cov_func)
-            tvp = gp.prior(varname, X=timesteps)
-        else:
-            gp = pm.gp.MarginalSparse(mean_func, cov_func, approx=approx)
-            tvp = gp.marginal_likelihood(varname, X=timesteps,
-                                         Xu=inducing, y=None, noise=0.1,
-                                        is_observed=False)
-        return tvp'''
 
 
 def model_wrapper(input_args, x4_limit=5, upper=900, lower=200, return_model=False, save_dir='./',
