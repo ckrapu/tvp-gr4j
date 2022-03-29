@@ -1,3 +1,4 @@
+![animation_v3](https://user-images.githubusercontent.com/10506722/160662562-00b72c03-b391-41f0-968a-378630e4223c.gif)
 
 ## Overview
 This page serves as the official repository for the `tvp-gr4j` project aimed at developing dynamic (i.e. with time-varying parameters) rainfall-runoff models for change and trend detection via NumPyro and PyMC3.
