@@ -21,6 +21,9 @@ To reproduce the findings contained in *A comparison of novel dynamic priors for
 
 3. To execute the real-world case study with 20 year daily streamflow records, run the notebook "jax-real-data.ipynb".
 
+## Structure
+Versions of GR4J appropriate for PyMC (with Theano) and NumPyro (with Jax) are available in `gr4j_theano.py` and `gr4j_jax.py`, respectively. 
+
 ## Dependencies
 The main package dependencies for this repository include Theano/PyMC3 and Jax/NumPyro. Running `pip install -f requirements.txt` from within this directory should obtain the correct packages. Using a virtual environment is highly recommended.
 
